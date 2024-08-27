@@ -7,6 +7,11 @@ A web application for displaying and managing blog posts. This project is built 
 - **Blog List**: Displays a list of blog posts with search functionality.
 - **Blog Details**: Provides detailed information about each blog post, including related posts.
 - **Responsive Design**: Ensures the application is usable on both large and small screens.
+- 
+- ### Screenshots
+![](Screenshots/Screenshot1.png)
+![](Screenshots/Screenshot2.png)
+![](Screenshots/Screenshot3.png)
 
 ## Technologies
 
