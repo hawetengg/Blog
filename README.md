@@ -9,9 +9,9 @@ A web application for displaying and managing blog posts. This project is built 
 - **Responsive Design**: Ensures the application is usable on both large and small screens.
 - 
 - ### Screenshots
-![Image1](Screenshots/Screenshot1.png)
-![Image2](Screenshots/Screenshot2.png)
-![Image3](Screenshots/Screenshot3.png)
+![Image1](screenshots/Screenshot1.png)
+![Image2](screenshots/Screenshot2.png)
+![Image3](screenshots/Screenshot3.png)
 
 ## Technologies
 
