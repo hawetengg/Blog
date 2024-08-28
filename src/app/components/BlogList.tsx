@@ -4,28 +4,17 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "@/app/components/BlogCard";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import blogData from "@/app/data.json"; 
 
 const BlogList: React.FC = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    async function fetchBlogs() {
-      try {
-        const response = await fetch(
-          "https://a2sv-backend.onrender.com/api/blogs"
-        );
-        const data = await response.json();
-        setBlogs(data.slice(0, 5)); 
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
-      }
-    }
-
-    fetchBlogs();
+    
+    setBlogs(blogData.slice(0, 5)); 
   }, []);
 
-  
   const filteredBlogs = blogs.filter((blog) =>
     blog.title.toLowerCase().includes(search.toLowerCase())
   );
@@ -37,7 +26,7 @@ const BlogList: React.FC = () => {
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold">Blogs</h2>
 
-          {/* Centered Container for Search and Button */}
+          
           <div className="flex flex-grow justify-center">
             <div className="flex gap-4">
               <input
